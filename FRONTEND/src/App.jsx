@@ -1,10 +1,21 @@
-import React from 'react'
+// Importing Dependecies
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Importing Components
+import UserLayout from './components/Layout/Userlayout';
+
 
 function App() {
   return (
-    <div> <h1 class="text-xl font">
-      Hello world!
-    </h1></div>
+    <BrowserRouter>
+      <Routes>
+        {/* User */}
+        <Route path="/" element={<UserLayout />} />
+        
+        {/* Admin */}
+      </Routes>
+    </BrowserRouter>
   )
 }
 

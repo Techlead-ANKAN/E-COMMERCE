@@ -1,9 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Imports */
+@import "tailwindcss";
 
+/* Root Styles */
 #root{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal; 
+}
+
+/* Topbar Styles */
+.topbar-bg-rabbit-red {
+  background-color: #ea2e0e;
 }
